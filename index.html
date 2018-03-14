@@ -30,6 +30,7 @@ window.fn.pushPage = function (page, anim) {
   </script>
 </head>
 <body>
+
 <ons-navigator id="appNavigator" swipeable swipe-target-width="80px">
   <ons-page>
     <ons-splitter id="appSplitter">
@@ -68,7 +69,7 @@ window.fn.pushPage = function (page, anim) {
 <template id="sidemenu.html">
   <ons-page>
     <div class="profile-pic">
-      <img src="https://monaca.io/img/logos/download_image_onsenui_01.png">
+      <img src="C:\Users\ashwin\Desktop\iarelogo.jpg">
     </div>
 
     <ons-list-title>Access</ons-list-title>
@@ -84,28 +85,7 @@ window.fn.pushPage = function (page, anim) {
           <ons-icon icon="fa-link"></ons-icon>
         </div>
       </ons-list-item>
-      <ons-list-item onclick="fn.loadView(1)">
-        <div class="left">
-          <ons-icon fixed-width class="list-item__icon" icon="ion-edit, material:md-edit"></ons-icon>
-        </div>
-        <div class="center">
-          Forms
-        </div>
-        <div class="right">
-          <ons-icon icon="fa-link"></ons-icon>
-        </div>
-      </ons-list-item>
-      <ons-list-item onclick="fn.loadView(2)">
-        <div class="left">
-          <ons-icon fixed-width class="list-item__icon" icon="ion-film-marker, material: md-movie-alt"></ons-icon>
-        </div>
-        <div class="center">
-          Animations
-        </div>
-        <div class="right">
-          <ons-icon icon="fa-link"></ons-icon>
-        </div>
-      </ons-list-item>
+     
     </ons-list>
 
     <ons-list-title style="margin-top: 10px">Links</ons-list-title>
@@ -115,29 +95,29 @@ window.fn.pushPage = function (page, anim) {
           <ons-icon fixed-width class="list-item__icon" icon="ion-document-text"></ons-icon>
         </div>
         <div class="center">
-          Docs
+          About ICT 
         </div>
         <div class="right">
           <ons-icon icon="fa-external-link"></ons-icon>
         </div>
       </ons-list-item>
-      <ons-list-item onclick="fn.loadLink('https://github.com/OnsenUI/OnsenUI')">
+      <ons-list-item onclick="fn.loadLink('https://facebook.com')">
         <div class="left">
           <ons-icon fixed-width class="list-item__icon" icon="ion-social-github"></ons-icon>
         </div>
         <div class="center">
-          GitHub
+         facebook
         </div>
         <div class="right">
           <ons-icon icon="fa-external-link"></ons-icon>
         </div>
       </ons-list-item>
-      <ons-list-item onclick="fn.loadLink('https://community.onsen.io/')">
+      <ons-list-item onclick="fn.loadLink('https://instagaram.com')">
         <div class="left">
           <ons-icon fixed-width class="list-item__icon" icon="ion-chatboxes"></ons-icon>
         </div>
         <div class="center">
-          Forum
+          instagram
         </div>
         <div class="right">
           <ons-icon icon="fa-external-link"></ons-icon>
@@ -165,7 +145,7 @@ window.fn.pushPage = function (page, anim) {
 
     <style>
       .profile-pic {
-        width: 200px;
+        width: 100px;
         background-color: #fff;
         margin: 20px auto 10px;
         border: 1px solid #999;
@@ -186,34 +166,37 @@ window.fn.pushPage = function (page, anim) {
 
 <template id="home.html">
   <ons-page>
-    <p class="intro">
-      This is a kitchen sink example that shows off the components of Onsen UI.<br><br>
-    </p>
+    <h1 class="intro">
+      Data Structures<br><br>
+    </h1>
 
     <ons-card onclick="fn.pushPage({'id': 'pullHook.html', 'title': 'PullHook'})">
-      <div class="title">Pull Hook</div>
-      <div class="content">Simple "pull to refresh" functionality to update data.</div>
+		<div style="float:right"><ons-icon size="40px" fixed-width class="list-item__icon" icon="ion-document-text"></ons-icon></div>
+      <div class="title">Syllabus</div>
+      <div class="content">Where's my syllabus to guide me through course?</div>
+	  
     </ons-card>
     <ons-card onclick="fn.pushPage({'id': 'dialogs.html', 'title': 'Dialogs'})">
-      <div class="title">Dialogs</div>
-      <div class="content">Components and utility methods to display many types of dialogs.</div>
+		<div style="float:right"><ons-icon size="40px" fixed-width class="list-item__icon" icon="ion-android-bulb"></ons-icon></div>
+      <div class="title">Course outcomes</div>
+      <div class="content">First rule of engineering; beware prototypes. Along with, avoid anything made by an engineer who doesn't have all his own fingers.</div>
     </ons-card>
     <ons-card onclick="fn.pushPage({'id': 'buttons.html', 'title': 'Buttons'})">
-      <div class="title">Buttons</div>
-      <div class="content">Different styles for buttons, floating action buttons and speed dials.</div>
+	<div style="float:right"><ons-icon size="40px" fixed-width class="list-item__icon" icon="ion-ios-list-outline"></ons-icon></div>
+      <div class="title">Schedule of Instruction</div>
+      <div class="content">A man who dares to waste one hour of life has not discovered the value of life.</div>
     </ons-card>
     <ons-card onclick="fn.pushPage({'id': 'carousel.html', 'title': 'Carousel'})">
-      <div class="title">Carousel</div>
-      <div class="content">Customizable carousel that can be optionally fullscreen.</div>
+		<div style="float:right"><ons-icon size="40px" fixed-width class="list-item__icon" icon="ion-ios-book"></ons-icon></div>
+      <div class="title">Quesion Bank</div>
+      <div class="content">Scientists study the world as it is, engineers create the world that never has been.</div>
     </ons-card>
     <ons-card onclick="fn.pushPage({'id': 'infiniteScroll.html', 'title': 'Infinite Scroll'})">
-      <div class="title">Infinite Scroll</div>
-      <div class="content">Two types of infinite lists: "Load More" and "Lazy Repeat".</div>
+		<div style="float:right"><ons-icon size="40px" fixed-width class="list-item__icon" icon="ion-android-clipboard"></ons-icon></div>
+      <div class="title">Questions Papers</div>
+      <div class="content">Engineers like to solve problems. If there are no problems handily available, they will create their own problems.</div>
     </ons-card>
-    <ons-card onclick="fn.pushPage({'id': 'progress.html', 'title': 'Progress'})">
-      <div class="title">Progress</div>
-      <div class="content">Linear progress, circular progress and spinners.</div>
-    </ons-card>
+    
 
     <style>
       .intro {
@@ -455,32 +438,171 @@ window.fn.pushPage = function (page, anim) {
 <template id="animations.html">
   <ons-page>
     <ons-list>
-      <ons-list-header>Transitions</ons-list-header>
-      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition.html', 'title': 'none'}, 'none')">
-        none
+      <ons-list-header>Week Contents</ons-list-header>
+      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition1.html', 'title': 'Week-1'}, 'slide-ios')">
+        Week-1
       </ons-list-item>
-      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition.html', 'title': 'default'}, 'default')">
-        default
+      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition2.html', 'title': 'Week-2'}, 'slide-ios')">
+        Week-2
       </ons-list-item>
-      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition.html', 'title': 'slide-ios'}, 'slide-ios')">
-        slide-ios
+      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition3.html', 'title': 'Week-3'}, 'slide-ios')">
+        Week-3
       </ons-list-item>
-      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition.html', 'title': 'slide-md'}, 'slide-md')">
-        slide-md
+      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition4.html', 'title': 'Week-4'}, 'slide-ios')">
+        Week-4
       </ons-list-item>
-      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition.html', 'title': 'lift-ios'}, 'lift-ios')">
-        lift-ios
+      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition5.html', 'title': 'Week-5'}, 'slide-ios')">
+        Week-5
       </ons-list-item>
-      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition.html', 'title': 'lift-md'}, 'lift-md')">
-        lift-md
+      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition6.html', 'title': 'Week-6'}, 'slide-ios')">
+        Week-6
       </ons-list-item>
-      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition.html', 'title': 'fade-ios'}, 'fade-ios')">
-        fade-ios
+      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition7.html', 'title': 'Week-7'}, 'slide-ios')">
+         Week-7
       </ons-list-item>
-      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition.html', 'title': 'fade-md'}, 'fade-md')">
-        fade-md
+      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition8.html', 'title': 'Week-8'}, 'slide-ios')">
+         Week-8
+      </ons-list-item>
+      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition9.html', 'title': 'Week-9'}, 'slide-ios')">
+         Week-9
+      </ons-list-item>
+      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition10.html', 'title': 'Week-10'}, 'slide-ios')">
+         Week-10
+      </ons-list-item>
+      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition11.html', 'title': 'Week-11'}, 'slide-ios')">
+         Week-11
+      </ons-list-item>
+      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition12.html', 'title': 'Week-12'}, 'slide-ios')">
+         Week-12
+      </ons-list-item>
+      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition13.html', 'title': 'Week-13'}, 'slide-ios')">
+         Week-13
+      </ons-list-item>
+      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition14.html', 'title': 'Week-14'}, 'slide-ios')">
+         Week-14
+      </ons-list-item>
+      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition15.html', 'title': 'Week-15'}, 'slide-ios')">
+         Week-15
+      </ons-list-item>
+      <ons-list-item modifier="chevron" onclick="fn.pushPage({'id': 'transition16.html', 'title': 'Week-16'}, 'slide-ios')">
+         Week-16
       </ons-list-item>
     </ons-list>
+  </ons-page>
+</template>
+
+<template id="weeksyb1.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>back</ons-back-button>
+      </div>
+      <div class="center"></div>
+    </ons-toolbar>
+
+    <ons-pull-hook id="pull-hook" threshold-height="120px">
+      <ons-icon id="pull-hook-icon" size="22px" class="pull-hook-content" icon="fa-arrow-down"></ons-icon>
+    </ons-pull-hook>
+
+    <h1> hello world 1</h1>
+	<style>
+      .pull-hook-content {
+        color: #666;
+        transition: transform .25s ease-in-out;
+      }
+    </style>
+  </ons-page>
+</template>
+
+<template id="weeksyb2.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>back</ons-back-button>
+      </div>
+      <div class="center"></div>
+    </ons-toolbar>
+
+    <ons-pull-hook id="pull-hook" threshold-height="120px">
+      <ons-icon id="pull-hook-icon" size="22px" class="pull-hook-content" icon="fa-arrow-down"></ons-icon>
+    </ons-pull-hook>
+
+    <h1> hello world 2</h1>
+	<style>
+      .pull-hook-content {
+        color: #666;
+        transition: transform .25s ease-in-out;
+      }
+    </style>
+  </ons-page>
+</template>
+
+<template id="weeksyb3.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>back</ons-back-button>
+      </div>
+      <div class="center"></div>
+    </ons-toolbar>
+
+    <ons-pull-hook id="pull-hook" threshold-height="120px">
+      <ons-icon id="pull-hook-icon" size="22px" class="pull-hook-content" icon="fa-arrow-down"></ons-icon>
+    </ons-pull-hook>
+
+    <h1> hello world 3</h1>
+	<style>
+      .pull-hook-content {
+        color: #666;
+        transition: transform .25s ease-in-out;
+      }
+    </style>
+  </ons-page>
+</template>
+
+<template id="weeksyb4.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>back</ons-back-button>
+      </div>
+      <div class="center"></div>
+    </ons-toolbar>
+
+    <ons-pull-hook id="pull-hook" threshold-height="120px">
+      <ons-icon id="pull-hook-icon" size="22px" class="pull-hook-content" icon="fa-arrow-down"></ons-icon>
+    </ons-pull-hook>
+
+    <h1> hello world 4</h1>
+	<style>
+      .pull-hook-content {
+        color: #666;
+        transition: transform .25s ease-in-out;
+      }
+    </style>
+  </ons-page>
+</template>
+
+<template id="weeksyb5.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>back</ons-back-button>
+      </div>
+      <div class="center"></div>
+    </ons-toolbar>
+
+    <ons-pull-hook id="pull-hook" threshold-height="120px">
+      <ons-icon id="pull-hook-icon" size="22px" class="pull-hook-content" icon="fa-arrow-down"></ons-icon>
+    </ons-pull-hook>
+
+    <h1> hello world 5</h1>
+	<style>
+      .pull-hook-content {
+        color: #666;
+        transition: transform .25s ease-in-out;
+      }
+    </style>
   </ons-page>
 </template>
 
@@ -497,80 +619,37 @@ window.fn.pushPage = function (page, anim) {
       <ons-icon id="pull-hook-icon" size="22px" class="pull-hook-content" icon="fa-arrow-down"></ons-icon>
     </ons-pull-hook>
 
-    <ons-list id="kitten-list">
-      <ons-list-header>Pull to refresh</ons-list-header>
-    </ons-list>
+    <ons-card onclick="fn.pushPage({'id': 'weeksyb1.html', 'title': 'PullHook1'})">
+		<div style="float:right"><ons-icon size="40px" fixed-width class="list-item__icon" icon="ion-android-star-outline"></ons-icon></div>
+      <div class="title">Unit 1</div>
+      
+	  
+    </ons-card>
+	<ons-card onclick="fn.pushPage({'id': 'weeksyb2.html', 'title': 'PullHook'})">
+		<div style="float:right"><ons-icon size="40px" fixed-width class="list-item__icon" icon="ion-android-star-outline"></ons-icon></div>
+      <div class="title">Unit 2</div>
+      
+	  
+    </ons-card>
+	<ons-card onclick="fn.pushPage({'id': 'weeksyb3.html', 'title': 'PullHook'})">
+		<div style="float:right"><ons-icon size="40px" fixed-width class="list-item__icon" icon="ion-android-star-outline"></ons-icon></div>
+      <div class="title">Unit 3</div>
+      
+    </ons-card>
+	<ons-card onclick="fn.pushPage({'id': 'weeksyb4.html', 'title': 'PullHook'})">
+		<div style="float:right"><ons-icon size="40px" fixed-width class="list-item__icon" icon="ion-android-star-outline"></ons-icon></div>
+      <div class="title">Unit 4</div>
+      
+    </ons-card>
+	<ons-card onclick="fn.pushPage({'id': 'weeksyb5.html', 'title': 'PullHook'})">
+		<div style="float:right"><ons-icon size="40px" fixed-width class="list-item__icon" icon="ion-android-star-outline"></ons-icon></div>
+      <div class="title">Unit 5</div>
+     
+	  
+    </ons-card>
+	
 
-    <script>
-      ons.getScriptPage().onInit = function () {
-        this.querySelector('ons-toolbar div.center').textContent = this.data.title;
-        var pullHook = document.getElementById('pull-hook');
-        var icon = document.getElementById('pull-hook-icon');
-        pullHook.addEventListener('changestate', function (event) {
-          switch (event.state) {
-            case 'initial':
-              icon.setAttribute('icon', 'fa-arrow-down');
-              icon.removeAttribute('rotate');
-              icon.removeAttribute('spin');
-              break;
-            case 'preaction':
-              icon.setAttribute('icon', 'fa-arrow-down');
-              icon.setAttribute('rotate', '180');
-              icon.removeAttribute('spin');
-              break;
-            case 'action':
-              icon.setAttribute('icon', 'fa-spinner');
-              icon.removeAttribute('rotate');
-              icon.setAttribute('spin', true);
-              break;
-          }
-        });
-        var getRandomName = function () {
-          const names = ['Oscar', 'Max', 'Tiger', 'Sam', 'Misty', 'Simba', 'Coco', 'Chloe', 'Lucy', 'Missy'];
-          return names[Math.floor(Math.random() * names.length)];
-        };
-        var getRandomUrl = function () {
-          const width = 40 + Math.floor(20 * Math.random());
-          const height = 40 + Math.floor(20 * Math.random());
-          return `https://placekitten.com/g/${width}/${height}`;
-        };
-        var getRandomKitten = function () {
-          return {
-            name: getRandomName(),
-            url: getRandomUrl()
-          };
-        };
-        var getRandomData = function () {
-          const data = [];
-          for (var i = 0; i < 8; i++) {
-            data.push(getRandomKitten());
-          }
-          return data;
-        };
-        var createKitten = function (kitten) {
-          return ons.createElement(`
-              <ons-list-item>
-                <div class="left">
-                  <img class="list-item__thumbnail" src="${kitten.url}">
-                </div>
-                <div class="center">${kitten.name}</div>
-              </ons-list-item>
-            `
-          );
-        };
-        var kittens = getRandomData();
-        for (kitty of kittens) {
-          var kitten = createKitten(kitty);
-          document.getElementById('kitten-list').appendChild(kitten);
-        };
-        pullHook.onAction = function (done) {
-          setTimeout(function() {
-            document.getElementById('kitten-list').appendChild(createKitten(getRandomKitten()));
-            done();
-          }, 400);
-        }
-      };
-    </script>
+    
 
     <style>
       .pull-hook-content {
@@ -779,13 +858,13 @@ window.fn.pushPage = function (page, anim) {
 
 <template id="buttons.html">
   <ons-page>
-    <ons-toolbar>
+  <ons-toolbar>
       <div class="left">
-        <ons-back-button>Home</ons-back-button>
+        <ons-back-button>Schedule of Instructions</ons-back-button>
       </div>
-      <div class="center"></div>
     </ons-toolbar>
 
+   <!--
     <section style="margin: 16px">
       <ons-button class="button-margin">Normal</ons-button>
       <ons-button modifier="quiet" class="button-margin">Quiet</ons-button>
@@ -838,8 +917,155 @@ window.fn.pushPage = function (page, anim) {
         margin: 6px 0;
       }
     </style>
+  -->
+   <h3>Equally spaced</h3>
+  <p></p>
+  <ons-row>
+  <ons-col style =" border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px;
+                       color: #999;,width:;height: ;">Col</ons-col>
+
+   <ons-col style =" border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px;
+                       color: #999;,width:;height: ;">Col</ons-col>
+                                           
+  </ons-row>
+
+  <ons-row>
+  <ons-col style =" border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px;
+                       color: #999;,width:;height: ;">Col</ons-col>
+
+   <ons-col style =" border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px;
+                       color: #999;,width:;height: ;">Col</ons-col>
+
+  </ons-row>
+
+  <ons-row>
+   <ons-col style =" border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px;
+                       color: #999;,width:;height: ;">Col</ons-col>
+
+    <ons-col style =" border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px;
+                       color: #999;,width:;height: ;">Col</ons-col>                   
+  </ons-row>
+  <br>
+ <p></p>
+  <ons-row>
+    <ons-col style =" border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px;
+                       color: #999;,width:;height: ;">Col</ons-col>
+    <ons-col style="  border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px;width: ; height: ;
+                      color: #999;">Col</ons-col>
+    <ons-col style =" border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px; width : ; height : ;
+                      color: #999;">Col</ons-col>
+  </ons-row>
+  
+
+ <ons-row>
+    <ons-col style =" border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px;
+                       color: #999;,width:;height: ;">Col</ons-col>
+    <ons-col style="  border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px;width: ; height: ;
+                      color: #999;">Col</ons-col>
+    <ons-col style =" border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px; width : ; height : ;
+                      color: #999;">Col</ons-col>
+  </ons-row>
+
+
+
+   <ons-row>
+    <ons-col style =" border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px;
+                       color: #999;,width:;height: ;">Col</ons-col>
+    <ons-col style="  border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px;width: ; height: ;
+                      color: #999;">Col</ons-col>
+    <ons-col style =" border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px; width : ; height : ;
+                      color: #999;">Col</ons-col>
+  </ons-row>
+
+
+   <ons-row>
+    <ons-col style =" border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px;
+                       color: #999;,width:;height: ;">Col</ons-col>
+    <ons-col style="  border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px;width: ; height: ;
+                      color: #999;">Col</ons-col>
+    <ons-col style =" border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px; width : ; height : ;
+                      color: #999;">Col</ons-col>
+  </ons-row>
+
+
+   <ons-row>
+    <ons-col style =" border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px;
+                       color: #999;,width:;height: ;">Col</ons-col>
+    <ons-col style="  border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px;width: ; height: ;
+                      color: #999;">Col</ons-col>
+    <ons-col style =" border: 1px solid #FFF000;
+                      background: #f6f6f6;
+                      overflow: hidden;
+                      padding: 4px; width : ; height : ;
+                      color: #999;">Col</ons-col>
+  </ons-row>
+
+
+
+  
   </ons-page>
 </template>
+
 
 <template id="carousel.html">
   <ons-page>
@@ -1143,24 +1369,342 @@ window.fn.pushPage = function (page, anim) {
   </ons-page>
 </template>
 
-<template id="transition.html">
+<template id="transition1.html">
   <ons-page>
     <ons-toolbar>
       <div class="left">
-        <ons-back-button>Animations</ons-back-button>
+        <ons-back-button>Vedio Content</ons-back-button>
       </div>
-      <div class="center"></div>
     </ons-toolbar>
-    <p style="text-align: center">
-      Use the VOnsBackButton
-    </p>
+     <iframe width="640" height="360" src="https://www.youtube.com/embed/1nyfHep2qD8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     <script>
       ons.getScriptPage().onInit = function () {
         this.querySelector('ons-toolbar div.center').textContent = this.data.title;
       }
-    </script>
+   </script>
   </ons-page>
 </template>
+
+
+<style>
+  ons-splitter-side[animation=overlay] {
+    border-left: 1px solid #bbb;
+  }
+</style>
+
+<!--- week 2 starts here -->
+<template id="transition2.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>Vedio Content</ons-back-button>
+      </div>
+      
+    </ons-toolbar>
+    <div class="center" style="float:center">
+  
+  </div>
+    <script>
+      ons.getScriptPage().onInit = function () {
+        this.querySelector('ons-toolbar div.center').textContent = this.data.title;
+      }
+   </script>
+  </ons-page>
+</template>
+
+
+<!--- --->
+<!--- week 3 starts here -->
+<template id="transition.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>Vedio Content</ons-back-button>
+      </div>
+      
+    </ons-toolbar>
+    <div class="center" style="float:center">
+  
+  </div>
+    <script>
+      ons.getScriptPage().onInit = function () {
+        this.querySelector('ons-toolbar div.center').textContent = this.data.title;
+      }
+   </script>
+  </ons-page>
+</template>
+
+<!--- --->
+<!--- week 4 starts here -->
+<template id="transition4.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>Vedio Content</ons-back-button>
+      </div>
+      
+    </ons-toolbar>
+    <div class="center" style="float:center">
+    
+  </div>
+    <script>
+      ons.getScriptPage().onInit = function () {
+        this.querySelector('ons-toolbar div.center').textContent = this.data.title;
+      }
+   </script>
+  </ons-page>
+</template>
+
+
+<!--- -->
+<!--- week 5 starts here -->
+<template id="transition5.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>Vedio Content</ons-back-button>
+      </div>
+      
+    </ons-toolbar>
+    <div class="center" style="float:center">
+  
+  </div>
+    <script>
+      ons.getScriptPage().onInit = function () {
+        this.querySelector('ons-toolbar div.center').textContent = this.data.title;
+      }
+   </script>
+  </ons-page>
+</template>
+
+<!--- --->
+<!--- week 6 starts here -->
+<template id="transition6.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>Vedio Content</ons-back-button>
+      </div>
+      
+    </ons-toolbar>
+    <div class="center" style="float:center">
+  
+  </div>
+    <script>
+      ons.getScriptPage().onInit = function () {
+        this.querySelector('ons-toolbar div.center').textContent = this.data.title;
+      }
+   </script>
+  </ons-page>
+</template>
+
+
+<!--- --->
+<!--- week 7 starts here -->
+<template id="transition7.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>Vedio Content</ons-back-button>
+      </div>
+      
+    </ons-toolbar>
+    <div class="center" style="float:center">
+  
+  </div>
+    <script>
+      ons.getScriptPage().onInit = function () {
+        this.querySelector('ons-toolbar div.center').textContent = this.data.title;
+      }
+   </script>
+  </ons-page>
+</template>
+
+<!--- week 8 starts here -->
+<template id="transition8.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>Vedio Content</ons-back-button>
+      </div>
+      
+    </ons-toolbar>
+    <div class="center" style="float:center">
+  
+  </div>
+    <script>
+      ons.getScriptPage().onInit = function () {
+        this.querySelector('ons-toolbar div.center').textContent = this.data.title;
+      }
+   </script>
+  </ons-page>
+</template>
+
+
+<!--- week 9 starts here -->
+<template id="transition9.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>Vedio Content</ons-back-button>
+      </div>
+    </ons-toolbar>
+    <div class="center" style="float:center">
+  
+  </div>
+    <script>
+      ons.getScriptPage().onInit = function () {
+        this.querySelector('ons-toolbar div.center').textContent = this.data.title;
+      }
+   </script>
+  </ons-page>
+</template>
+
+
+<!--- week 10 starts here -->
+<template id="transition10.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>Vedio Content</ons-back-button>
+
+       </div>
+      
+    </ons-toolbar>
+    <div class="center" style="float:center">
+  
+  </div>
+    <script>
+      ons.getScriptPage().onInit = function () {
+        this.querySelector('ons-toolbar div.center').textContent = this.data.title;
+      }
+   </script>
+  </ons-page>
+</template>
+
+
+<!--- week 11 starts here -->
+<template id="transition11.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>Vedio Content</ons-back-button>
+      </div>
+      
+    </ons-toolbar>
+    <div class="center" style="float:center">
+  
+  </div>
+    <script>
+      ons.getScriptPage().onInit = function () {
+        this.querySelector('ons-toolbar div.center').textContent = this.data.title;
+      }
+   </script>
+  </ons-page>
+</template>
+
+
+<!--- week 12 starts here -->
+<template id="transition12.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>Vedio Content</ons-back-button>
+      </div>
+      
+    </ons-toolbar>
+    <div class="center" style="float:center">
+  
+  </div>
+    <script>
+      ons.getScriptPage().onInit = function () {
+        this.querySelector('ons-toolbar div.center').textContent = this.data.title;
+      }
+   </script>
+  </ons-page>
+</template>
+
+<!--- week 13 starts here -->
+<template id="transition13.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>Vedio Content</ons-back-button>
+      </div>
+      
+    </ons-toolbar>
+    <div class="center" style="float:center">
+  
+  </div>
+    <script>
+      ons.getScriptPage().onInit = function () {
+        this.querySelector('ons-toolbar div.center').textContent = this.data.title;
+      }
+   </script>
+  </ons-page>
+</template>
+<!--- week 14 starts here -->
+<template id="transition14.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>Vedio Content</ons-back-button>
+      </div>
+      
+    </ons-toolbar>
+    <div class="center" style="float:center">
+  
+  </div>
+    <script>
+      ons.getScriptPage().onInit = function () {
+        this.querySelector('ons-toolbar div.center').textContent = this.data.title;
+      }
+   </script>
+  </ons-page>
+</template>
+
+
+<!--- week 15 starts here -->
+<template id="transition15.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>Vedio Content</ons-back-button>
+      </div>
+      
+    </ons-toolbar>
+    <div class="center" style="float:center">
+  
+  </div>
+    <script>
+      ons.getScriptPage().onInit = function () {
+        this.querySelector('ons-toolbar div.center').textContent = this.data.title;
+      }
+   </script>
+  </ons-page>
+</template>
+
+
+<!--- week 16 starts here -->
+<template id="transition16.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>Vedio Content</ons-back-button>
+      </div>
+      
+    </ons-toolbar>
+    <div class="center" style="float:center">
+  
+  </div>
+    <script>
+      ons.getScriptPage().onInit = function () {
+        this.querySelector('ons-toolbar div.center').textContent = this.data.title;
+      }
+   </script>
+  </ons-page>
+</template>
+
 
 <style>
   ons-splitter-side[animation=overlay] {
